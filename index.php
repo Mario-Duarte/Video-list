@@ -24,7 +24,7 @@
 
 		<div class="video-thumbnail">
 			<a href="#0" data-id="{{snippet.resourceId.videoId}}">
-				<img src="{{snippet.thumbnails.medium.url}}" srcset="{{snippet.thumbnails.standard.url}} 768w, {{snippet.thumbnails.high.url}} 481w" alt="{{snippet.title}}">
+				<img src="{{snippet.thumbnails.medium.url}}" srcset="{{snippet.thumbnails.standard.url}} 768w, {{snippet.thumbnails.high.url}} 481w" sizes="(min-width: 481px) 768px, 100vw" alt="{{snippet.title}}">
 			</a>
 		</div>
 	</div>
