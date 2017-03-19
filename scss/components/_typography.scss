@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body {
+	font-family: 'Roboto', sans-serif;;
+}
+
+a {
+	color: $choal;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $secundary;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+p, a, li, span {
+	font-size: 14px;
+	line-height: 100%;
+	@include media('minTablet'){
+		font-size: 16px;
+		line-height: 120%;
+	};
+	&.small {
+		font-size: 8px;
+		@include media('minTablet'){
+			font-size: 10px;
+		};
+	}
+}
+
+h1, .txt-huge {
+	font-size: 22px;
+	@include media('minTablet'){
+		font-size: 24px;
+	};
+}
+h2, .txt-big {
+	font-size: 20px;
+	@include media('minTablet'){
+		font-size: 22px;
+	};
+}
+h3, .txt-normal {
+	font-size: 18px;
+	@include media('minTablet'){
+		font-size: 20px;
+	};
+}
+h4, .txt-small {
+	font-size: 16px;
+	@include media('minTablet'){
+		font-size: 18px;
+	};
+}

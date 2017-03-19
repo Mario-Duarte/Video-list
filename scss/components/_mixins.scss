@@ -1,0 +1,24 @@
+// =======================================
+// Media Query Mixin
+// =======================================
+@mixin media($media) {
+	@if $media == 'maxMobile' {@media screen and (max-width: $sm) {@content;}}
+	@if $media == 'minTablet' {@media screen and (min-width: $md) {@content;}}
+}
+
+// =======================================
+// Keep aspect ratio mixin
+// =======================================
+@mixin aspect-ratio($percentual-height){
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  &:before {
+    padding-top:$percentual-height;
+    content: '';
+    display: block;
+  }
+  > * { position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+}
