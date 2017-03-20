@@ -20,7 +20,7 @@ p, a, li, span {
 	line-height: 100%;
 	@include media('minTablet'){
 		font-size: 16px;
-		line-height: 120%;
+		line-height: 140%;
 	};
 	&.small {
 		font-size: 8px;
@@ -32,25 +32,29 @@ p, a, li, span {
 
 h1, .txt-huge {
 	font-size: 22px;
+	line-height: 150%;
 	@include media('minTablet'){
-		font-size: 24px;
+		font-size: 28px;
 	};
 }
 h2, .txt-big {
 	font-size: 20px;
+	line-height: 150%;
 	@include media('minTablet'){
-		font-size: 22px;
+		font-size: 26px;
 	};
 }
 h3, .txt-normal {
 	font-size: 18px;
+	line-height: 150%;
 	@include media('minTablet'){
-		font-size: 20px;
+		font-size: 24px;
 	};
 }
 h4, .txt-small {
 	font-size: 16px;
+	line-height: 150%;
 	@include media('minTablet'){
-		font-size: 18px;
+		font-size: 20px;
 	};
 }
